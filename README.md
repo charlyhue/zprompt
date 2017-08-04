@@ -1,0 +1,2 @@
+# zprompt
+Simple shell prompt
