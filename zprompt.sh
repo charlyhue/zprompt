@@ -17,7 +17,7 @@ parse_git_branch() {
 host=$HOSTNAME
 if [[ $host == *".$domain" ]]
 then
-	host=${host:0:-${#domain}}	
+	host=${host:0:-(${#domain}+1)}	
 fi
 
 PS1='\[\e[90m\][$env]\[\e[0m\][ \[\e[0;32m\]\u@$host \[\e[34m\]\w'
